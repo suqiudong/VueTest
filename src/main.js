@@ -6,10 +6,10 @@ import router from './router';
 import ElementUI from 'element-ui';
 
 // 默认主题
-import 'element-ui/lib/theme-chalk/index.css';
+// import 'element-ui/lib/theme-chalk/index.css';
 
 // 红色主题
-// import './components/common/color/red/index.css';
+import './components/common/color/red/index.css';
 
 // f60主题
 // import './components/common/color/f60/index.css';
