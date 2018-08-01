@@ -9,10 +9,13 @@ import ElementUI from 'element-ui';
 // import 'element-ui/lib/theme-chalk/index.css';
 
 // 红色主题
-import './components/common/color/red/index.css';
+// import './components/common/color/red/index.css';
 
 // f60主题
 // import './components/common/color/f60/index.css';
+
+// #4786ff颜色主题'
+import './components/common/color/4786ff/index.css';
 
 import store from './store/store.js';
 
