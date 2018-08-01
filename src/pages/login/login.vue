@@ -1,6 +1,6 @@
 <template>
   <div class="box" @mousemove="cursor"  :style="{background:data.mainBackground}">
-    <div class="contain" style="">
+    <div class="contain">
       <div class="left">
         <h1><img src="../../assets/logo.png" alt=""></h1>
         <div class="left_input">
@@ -12,7 +12,7 @@
           <p style="margin-bottom:20px">
             <i><img src="../../assets/icon_login_password_nol.png" alt="" v-show="passwordIconShow"></i>
             <i><img src="../../assets/icon_login_password_sel.png" alt="" v-show="!passwordIconShow"></i>
-            <input type="text" class="password" v-model="password" v-on:focus="passwordFocus" v-on:blur="passwordBlur"  :placeholder="data.passwordPlaceholder">
+            <input type="password" class="password" v-model="password" v-on:focus="passwordFocus" v-on:blur="passwordBlur"  :placeholder="data.passwordPlaceholder">
           </p>
           <p style="margin-bottom:28px;font-size:14px;color:#4786FF"><span style="cursor:pointer;">忘记密码？</span></p>
           <p>
@@ -48,7 +48,7 @@ export default {
       password: "",
       username: "",
       usernameIconShow: true, //获取焦点小图标的切换
-      passwordIconShow: true //密码框获取焦点小图标的切换
+      passwordIconShow: true, //密码框获取焦点小图标的切换
     };
   },
   methods: {
@@ -79,7 +79,7 @@ export default {
       } else if (this.password == "") {
         alert("请输入密码");
       } else {
-        var data = {};
+        var requestData = {};
       }
     },
 
@@ -89,6 +89,7 @@ export default {
   },
   mounted() {
     this.data = login;
+    console.log(this.data)
   }
 };
 </script>
